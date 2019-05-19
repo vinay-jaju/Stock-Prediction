@@ -14,8 +14,11 @@ Get your quand API Key by signing up on Quandl [here](https://www.quandl.com/acc
 
 * Step 1: 
     Get the stock from Quandl. We'll be using *WIKI/GOOGL*
-    Other alternatives: *NSE/OIL.1, WIKI/AAPL.4, EIA/PET_RWTC_D* Read [here](https://www.quandl.com/databases/WIKIP/documentation?anchor=companies). 
-
+    Other alternatives: *NSE/OIL.1, WIKI/AAPL.4, EIA/PET_RWTC_D* 
+    Read [here](https://www.quandl.com/databases/WIKIP/documentation?anchor=companies). 
+    ```
+    df = quandl.get('WIKI/GOOGL', start_date=start_date, end_date=end_date, collapse="daily")
+    ```
 * Step 2:
     Choose the target and features. For simplicity we have taken the Closed Price as the label and feature as the date (which is converted to integer by using the index function)
 * Step 3: 
