@@ -11,7 +11,7 @@ style.use('ggplot')
 start_date = datetime.date(2017,1,3)
 end_date = datetime.date.today()
 
-quandl.ApiConfig.api_key = "F6vhAoNkeSdnUuGbvyJU"
+quandl.ApiConfig.api_key = <API KEY here>
 
 #Get Data From Quandl
 df = quandl.get('WIKI/GOOGL', start_date=start_date, end_date=end_date, collapse="daily")
